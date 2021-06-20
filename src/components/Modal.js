@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Modal = () => {
+const Modal = ({ closeModal }) => {
 	return (
 		<div className='modal-overlay'>
 			<div className='modal-container'>
-				<button>X</button>
+				<button onClick={() => closeModal(false)}>X</button>
 				<div className='title'>
 					<h2>Sure, You want to continue?</h2>
 				</div>
